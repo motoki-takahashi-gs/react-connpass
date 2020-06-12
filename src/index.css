@@ -11,3 +11,61 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+h1 {
+  text-align: center;
+  padding: 0.3em;
+}
+
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu ul li {
+  margin: 0.5em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main ul li:nth-child(odd) {
+  background-color: #fff8e5;
+}
+
+.liked ul li:nth-child(odd) {
+  background-color: #e4ffdf;
+}
+
+.main ul li,
+.liked ul li {
+  padding: 1em;
+}
+
+.main ul li > div,
+.liked ul li > div {
+  line-height: 1.7em;
+}
+
+.main p {
+  text-align: center;
+}
+
+.vote {
+  text-align: center;
+}
+
+.go-to-liked {
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+@media (min-width: 650px) {
+  body {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
